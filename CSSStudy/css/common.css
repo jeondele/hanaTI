@@ -1,0 +1,11 @@
+/* @charset "UTF-8";*/
+/* css 선택자(selector) */
+body {
+   font-family : 굴림;
+}
+
+p {
+   font-size: 20pt;
+   color : blue;
+   background-color : gold;
+}

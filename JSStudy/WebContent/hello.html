@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<script src = "./js/common.js"></script>
+</head>
+<body>
+<h2> Hello, it's me. </h2>
+<p>I was wondering if after all these years<br>
+전 궁금했어요 이 모든 시간이 지나고 나도<br><br>
+
+You'd like to meet, to go over everything<br>
+절 만나서 우리의 모든걸 돌이켜 보고 싶어할지 말이에요<br>
+</p>
+
+--------------------------------------------<br>
+
+<!-- 스크립트 선언 -->
+<script type="text/javascript">
+// 식별자, 키워드, 변수, 데이터타입, 연산자, 제어문, 함수, 클래스
+document.write("<h3>Hello, can you hear me?</h3><br>");
+document.write("Hello, from the outside<br>");
+document.write(50+"<br>");
+document.write(false+"<br>");
+document.write(true+"<br>");
+
+//변수 선언 : String, Number, Boolean
+var myCharacter = 'a"del"e';
+var xx ;
+document.write(myCharacter+"<br>");
+/* document.write(xx+"<br>"); */
+
+var a = 10, b=30, c = 30;
+var flag = true;
+
+//레퍼런스 타입 : 객체 타입
+var message = new String("나는 레퍼런스 타입 문자열 객체입니다...");
+document.write(message.length+"<br>");
+document.write(message+"<br>");
+
+//변수 Overwrite 가능
+var a = 20;
+var a = 1999909090909;
+document.write(a+"<br>");
+
+// 동적 타입핑
+myCharacter = 50000;
+document.write(myCharacter+"<br>");
+document.write(sum(40,50));
+</script>
+--------------------------------------------<br>
+</body>
+</html>

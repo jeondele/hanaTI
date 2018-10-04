@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+   <form action="xxx.jsp" method="post">
+      <table align="center" border='1' width=80%>
+         <caption>신규사원 등록</caption>
+         <tr>
+            <th><label for="emp_no">사원번호</label></th>
+            <td><label><input type="text" name="emp_no"
+                  id="emp_no" required></label></td>
+         </tr>
+         <tr>
+            <th><label for="firstname">이름</label></th>
+            <td><label><input type="text" name="firstname"
+                  id="firstname" required></label></td>
+         </tr>
+         <tr>
+            <th><label for="lastname">성</label></th>
+            <td><label><input type="text" name="lastname"
+                  id="lastname" required></label></td>
+         </tr>
+         <!--  
+         <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+         -->
+         <tr>
+            <th>이메일</th>
+            <td><input type="text" name="email_id" required >@
+               <select name="email" id = "email">
+                  <option value = "default" selected>선택하세요
+                  <option value = "naver">네이버
+                  <option value = "google">구글
+                  <option value = "github">깃허브</option>
+               </select> 
+               <input type="text" id="email_format" required>
+            </td>
+         </tr>
+         <tr>
+            <th>전화번호</th>
+            <td><input type = "tel" name="tl" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>(예: 010-4128-3788)</td>
+         </tr>
+         <tr>
+            <th>입사일자</th>
+            <td><input type = "text" name  = "hiredate" pattern = "[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" required>(예: 2016-09-07)</td>
+         </tr>
+         <tr>
+            <th>부서</th>
+            <td><select name="department" >
+                  <option value = "default" selected> &nbsp;선택하세요
+                  <option value = "bank"> &nbsp;은행
+                  <option value = "finance"> &nbsp;금융
+                  <option>DTLab</option>
+               </select></td>
+         </tr>
+         <tr>
+            <th>업무</th>
+            <td><select name="work" >
+                  <option> &nbsp;선택하세요
+                  <option> &nbsp;유지보수
+                  <option>개발
+                  </option>
+               </select></td>
+         </tr>
+         <tr>
+            <th>부서장</th>
+            <td><select name="headname" >
+                  <option>선택하세요
+                  <option>아이유
+                  <option>수지
+                  </option>
+               </select></td>
+         </tr>
+         <tr>
+            <th>급여</th>
+            <td><input type = "number" name  = "salary" ></td>
+         </tr>
+      </table>
+      <br>
+      <center>
+         <input type="submit" value="가입"> &nbsp; <input type="reset" value="취소">
+      </center>
+   </form>
+</body>
+</html>

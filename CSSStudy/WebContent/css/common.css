@@ -1,0 +1,16 @@
+/* @charset "UTF-8";*/
+/* css 선택자(selector) */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+   font-family : 굴림;
+}
+
+p {
+   font-size: 20pt;
+   color : blue;
+   background-color : gold !important;
+}

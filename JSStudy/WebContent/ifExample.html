@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제어문</title>
+</head>
+<body>
+<script type="text/javascript">
+var score = prompt("성적을 입력하세요");
+var score = prompt("성적을 입력하세요", 0);
+console.log(typeof score);
+score = parseInt(score);
+console.log(score);
+if(score > 90) {
+	console.log("수");
+} else if ( score > 80) {
+	console.log("우");
+} else if ( score > 70) {
+	console.log("미");
+} else if ( score > 60) {
+	console.log("양");
+} else {
+	console.log("가");
+}
+
+/* 문자열을 제일 많이 쓰는 자바스크립트에서 자동형변환을 시킨다. */
+console.log(10 * "10");
+console.log(10 + "10");
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.awt.DisplayMode"/>
+<fullyQualifiedTypeName name="test.Season"/>
+<fullyQualifiedTypeName name="java.util.EnumSet"/>
+<fullyQualifiedTypeName name="test.DayDD"/>
+<fullyQualifiedTypeName name="test.Day1"/>
+<fullyQualifiedTypeName name="test.DayOfWeek"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
+<fullyQualifiedTypeName name="hashcode.BaseClassWithField"/>
+<fullyQualifiedTypeName name="staticInheritance.SubClass"/>
+<fullyQualifiedTypeName name="staticInheritance.BaseClass"/>
+<fullyQualifiedTypeName name="override.SportsCar"/>
+<fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.stream.Stream"/>
+<fullyQualifiedTypeName name="java.util.stream.Collector"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.StackTraceElement"/>
+<fullyQualifiedTypeName name="share.Shared"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+</qualifiedTypeNameHistroy>

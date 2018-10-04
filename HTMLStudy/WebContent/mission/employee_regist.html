@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="employee_regist.css">
+<title></title>
+</head>
+<body>
+  <div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>신규사원 등록</h3>
+    <h4>신규사원 가입 양식</h4>
+    <ul>
+    <li>
+      <input placeholder="사원번호" type="text" tabindex="1" required autofocus>
+    </li>
+    <li>
+      <input placeholder="이름" type="firstname" tabindex="2" required>
+    </li>
+    <li>
+      <input placeholder="성" type="lastname" tabindex="3" required>
+    </li>
+    <li>
+      <input placeholder="이메일 주소 입력 (예 : nasawon@sawon.com)" type="email" tabindex="4" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+    </li>
+    <li>
+      <input placeholder="전화번호 (예 : 010-6642-1489)" type="tel" tabindex="5" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+    </li>
+    <li>
+      <input placeholder="입사일자 (예 : 2016-09-07)" type="hiredate" tabindex="6" pattern = "[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" required>
+    </li>
+    <li>
+      <select type="department" tabindex="7">
+                  <option disabled="disabled" value = "default" selected> &nbsp;부서 선택
+                  <option value = "bank"> &nbsp;은행
+                  <option value = "finance"> &nbsp;금융
+                  <option value = "lab"> &nbsp;DTLab</option>
+      </select>
+    </li>
+    <li>
+      <select type="work" tabindex="8">
+                  <option disabled="disabled" value = "default" selected> &nbsp;직무 선택
+                  <option value = "sm"> &nbsp;유지보수
+                  <option value = "dev"> &nbsp;개발
+                  </option>
+      </select> 
+    </li>
+    <li>
+      <select type="headname" tabindex="9">
+                  <option disabled="disabled" value = "default" selected > &nbsp;부서장 선택
+                  <option value = "iu"> &nbsp;아이유
+                  <option value = "suzy"> &nbsp;수지
+                  </option>
+      </select>
+    </li>
+    <li>
+      <input placeholder="기본급 : 10000원" type="salary" tabindex="10" pattern="[0-9+-]" required>
+    </li>
+    <li>
+      <button name="submit" type="submit" tabindex="11" id="contact-submit" data-submit="...Sending">가입</button>
+      <input type="reset" tabindex="12" id="contact-submit" value="취소"> 
+    </li>
+    </ul>
+  </form>
+</div>
+</body>
+</html>

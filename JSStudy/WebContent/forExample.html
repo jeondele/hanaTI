@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel ="stylesheet" type = "text/css" href = "./css/table.css">
+<title>제어문</title>
+</head>
+<body>
+<h2>구구단 자바스크립트 이용하여 산출하기</h2>
+
+<script>
+/* var output = "<table>";
+		   += "<tr>";
+		   += "<td> 2 * 1 </td>";
+		   += "</tr>"; */
+		   
+document.write("<table style=''>");
+		   
+for (var i = 2; i < 10 ; i ++) {
+      document.write("<tr>");
+      for (var j = 1; j < 10; j++) {
+	      document.write("<td>" + i + "*" + j +"=" + i*j +"</td>");
+      }
+      document.write("</tr>");
+}
+
+document.write("</table>");
+</script>
+
+</body>
+</html>

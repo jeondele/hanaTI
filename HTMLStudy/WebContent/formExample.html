@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<!--   readonly 
+       multiple
+
+      http://localhost/html/xxx.jsp?id=&pw=&teams=%EB%91%90%EC%82%B0+%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88&message=+%EC%A0%90%EC%8B%AC%EB%A8%B9%EA%B3%A0+%ED%95%A9%EC%8B%9C%EB%8B%A4...&gender=on
+      "?id=&pw=&teams=%EB%91%90%EC%82%B0+%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88&message=+%EC%A0%90%EC%8B%AC%EB%A8%B9%EA%B3%A0+%ED%95%A9%EC%8B%9C%EB%8B%A4...&gender=on"
+      -> 쿼리 스트링이라고 한다 // 보안에 취약할 수 있다.
+-->
+<h2>폼 관련 태그들....</h2>
+
+<form action = "xxx.jsp" method="post">
+
+<label> 아이디 : <input type ="text" name = "id" id = "id"></label> <br>
+<label> 비밀번호 : <input type ="password" name = "pw"></label> <br>
+<input type = "submit" value = "로그인"> <input type = "reset" value = "취소">
+<select name = "teams" > 
+   <option>두산 타이거즈
+   <option>SK 타이거즈
+   <option>한화 이글즈 </option>
+</select>
+<textarea name = "message" rows = "5" cols = "50"> 점심먹고 합시다...</textarea>
+
+<label>남자<input type = "radio" name = "gender"></label>
+<label>여자<input type = "radio" name = "gender" checked></label>
+
+<input type = "hidden" name = "some" value = "test">
+<input type = "file" name  = "file_upload">
+</form>
+</body>
+</html>

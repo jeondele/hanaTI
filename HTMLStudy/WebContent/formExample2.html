@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<!--   readonly 
+       multiple
+
+      http://localhost/html/xxx.jsp?id=&pw=&teams=%EB%91%90%EC%82%B0+%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88&message=+%EC%A0%90%EC%8B%AC%EB%A8%B9%EA%B3%A0+%ED%95%A9%EC%8B%9C%EB%8B%A4...&gender=on
+      "?id=&pw=&teams=%EB%91%90%EC%82%B0+%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88&message=+%EC%A0%90%EC%8B%AC%EB%A8%B9%EA%B3%A0+%ED%95%A9%EC%8B%9C%EB%8B%A4...&gender=on"
+      -> 쿼리 스트링이라고 한다 // 보안에 취약할 수 있다.
+-->
+<h2>폼 관련 태그들....</h2>
+
+<form action = "xxx.jsp" method="post">
+
+<input type = "search" name  = "s" autofocus required>
+<input type = "email" name  = "e">
+<input type = "url" name  = "u" placeholder ="이메일">
+<input type = "tel" name  = "tl">
+<input type = "range" name  = "r">
+<input type = "number" name  = "n">
+<input type = "color" name  = "c">
+<input type = "date" name  = "d">
+<input type = "image" id = "butt" src = "images/youtube.png">
+Country code: <input type="text" name="country_code" required
+pattern="[A-Za-z]{3}" title="Three letter country code">
+<button> 버튼</button>
+</form>
+</body>
+</html>

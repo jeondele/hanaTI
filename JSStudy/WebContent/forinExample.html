@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<h2>forin 문</h2>
+<script>
+var array = [10,20,30,40,50];
+console.log(array.length);
+for(var i in array) {
+	console.log(array[i]);
+}
+console.log(i);
+/* document는 레퍼런스 밸류 : map으로 되어있다. */
+var x ="";
+for(x in document) {
+	console.log(x + " : " + document[x]);
+}
+
+function(){
+}
+
+</script>
+</body>
+</html>
