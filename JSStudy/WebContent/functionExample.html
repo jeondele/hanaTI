@@ -42,7 +42,7 @@
 			document.write("리턴함수 입니다..!");
 		};
 	}
-	document
+	
 	some2()();
 	
 	//#3. 중첩 함수
@@ -67,10 +67,20 @@
 		//arguments.
 	}
 	
+	//자동실행 : 선언과 동시에 실행한다.
+	(function(){
+		console.log("익명함수입니다.....");
+	})();
+	
+	
 	summ();
 	summ(1, 1, 1);
 	summ(2);
 	summ(3, 4, 5, 6, 7);
+	
+	//summ()의 toString이 찍힌다.
+	console.log(summ); //string, number, bollean, object, function
+	
 </script>
 
 <body>

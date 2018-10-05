@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript" src = "../js/Student.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+var student = new Student('전상일', 85, 98, 88, 86);
+//Object의 toString이 찍힌다.
+console.log(student.toString());
+
+console.log(Student.toString()); //Function의 prototype객체의 toString();
+console.log(student.toString()); //Object의 toString();
+
+
+//브라우저의 출력엔진으로 toString을 제공
+console.log(student.getSum());
+console.log(student.getAvg());
+
+console.log(new student.constructor("aaaa", 10, 20, 30, 40));
+</script>
+</body>
+</html>

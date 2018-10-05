@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+function Shape(x, y) {
+	this.x = x;
+	this.y = y;
+}
+
+Shape.prototype.getArea = function(){
+	return 0;
+}
+
+Shape.prototype.getRound = function(){
+	return 0;
+}
+
+function Rectangle(x, y, width, height) {
+	Shape.call(x, y);
+	this.width = width;
+	this.height = height;
+}
+
+Rectangle.prototype = new Shape();
+Rectangle.prototype.getArea = function(){
+	return this.width * this.height;
+}
+
+Rectangle.prototype.getRound = function(){
+	return 2*(this.width + this.height);
+}
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+console.log(typeof Rectangle.prototype);
+var shape = new Shape(10,20);
+console.log("넓이 :" + shape.getArea());
+
+shape = new Rectangle(10, 20, 50, 30);
+console.log("넓이 :" + shape.getArea());
+console.log("둘레 :" + shape.getRound());
+
+</script>
+</body>
+</html>

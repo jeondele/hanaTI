@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+/* 사용자 정의 객체 (생성자) */
+function Student(name, korean, math, english, science) {
+	//프로퍼티	
+	this.name = name;
+	this.korean = korean;
+	this.math = math;
+	this.english = english;
+	this.science = science;
+	
+	this.getSum = function(){
+		return this.korean + this.math + this.english + this.science;
+	}
+	
+	this.getAvg = function(){
+		return (this.getSum())/4;
+	}
+	
+	this.toString = function() {
+		return this.name+"\t"+this.korean+"\t"+this.math+"\t"+this.english+"\t"+this.science;
+	}
+}
+
+Student.schoolName = "kosta 대학교";
+
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+var student = new Student('전상일', 85, 98, 88, 86);
+console.log(student.name);
+console.log(student.korean);
+console.log(student['korean']);
+console.log(typeof Student);
+console.log(typeof student);
+//Object의 toString이 찍힌다.
+console.log(student.toString());
+
+//브라우저의 출력엔진으로 toString을 제공
+console.log(student);
+console.log(student.getSum());
+console.log(student.getAvg());
+
+console.log(Student.schoolName);
+console.log(student.schoolName);
+
+</script>
+</body>
+</html>

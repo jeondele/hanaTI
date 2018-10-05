@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//var product = new Object();
+//위 코드와 및 코드가 같다
+var product = {};
+
+//ver1
+var product1 = {
+	"name" : "7D 건조망고",
+	type : "당절임",
+	element : "성분",
+	origin : "필리핀 망고",
+	price : 70
+};
+
+//동적 메소드 추가
+product1.toString = function(){
+	return this.name + "\t" +this.type;
+}
+
+console.log(product1);
+console.log(product1.toString());
+console.log(product1.name);
+
+delete product1.price;
+console.log(product1.price);
+
+for (var name in product1) {
+	console.log(name + ":" + product1[name]);
+}
+
+var string = new String("김기정");
+
+console.log(String);
+
+console.log("type" in product1);
+
+//ver2
+var product2 = {};
+product2.name = "7D 건조망고";
+product2.type = "당절임";
+product2.element = "성분";
+product2.origin = "필리핀 망고";
+
+console.log(product2);
+</script>
+</body>
+</html>
