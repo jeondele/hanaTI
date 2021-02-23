@@ -1,1 +1,1 @@
-# hanaTI 교육생 
+# hanaTI 교육생 교육자로
