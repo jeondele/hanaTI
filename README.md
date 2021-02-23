@@ -1,1 +1,1 @@
-# hanaTI
+# hanaTI 교육생 
